@@ -1,0 +1,25 @@
+python四个带 key 参数的函数（max、min、map、filter）
+
+1）max（iterable， key）
+
+ key：相当于对可迭代对象iterable每个元素的预处理。
+
+#返回key参数中的匿名函数返回的值中最大一个所对应的iterable参数中的值。
+
+max('ah', 'bf', key=lambda x: x[1])
+
+ 
+
+2）min（iterable， key）
+
+https://www.cnblogs.com/bigtreei/p/7819450.html
+
+
+3）map（iterable， key）
+
+
+
+
+4）filter（iterable， key）
+
+
