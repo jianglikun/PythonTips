@@ -1,0 +1,17 @@
+增加行
+
+如果你确定知道要增加的行的索引是什么, 并且这个索引不在df.index中, 那么用如下方法是最简单的.
+
+	
+
+df.loc['增加行的名', :]=增加行的list
+df.tail()
+
+例子：
+col_num = AllPatientInfo_data.shape[1]
+
+shiyan = ['shiyan']*col_num
+water = ['water']*col_num
+
+AllPatientInfo_data.loc['shiyan',:]=shiyan
+AllPatientInfo_data.loc['water',:]=water
