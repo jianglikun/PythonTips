@@ -1,0 +1,23 @@
+
+1\首先使用你想克隆的那个python，输出它依赖的包
+
+(env_prj301V1) [15:08:53 fangkc@bj-rdc-seq:~]$ pip freeze list 
+amqp==2.5.0
+Babel==2.7.0
+billiard==3.6.0.0
+celery==4.3.0
+DateTime==4.3
+flower==0.9.3
+kombu==4.6.3
+PyMySQL==0.8.1
+pytz==2019.1
+SQLAlchemy==1.1.15
+tornado==5.1.1
+vine==1.3.0
+zope.interface==4.6.0
+(env_prj301V1) [15:09:07 fangkc@bj-rdc-seq:~]$ pip freeze list > kechi_requirement.txt 
+
+2、然后使用自己的python，pip
+pip install -r kechi_requirement.txt 
+
+完美！
