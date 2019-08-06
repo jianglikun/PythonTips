@@ -1,4 +1,6 @@
-# 使用python发送邮件
+#https://www.liaoxuefeng.com/wiki/897692888725344/923057144964288
+#https://www.runoob.com/python/python-email.html
+#使用python发送邮件
 # smtp传输协议
 
 # 以下执行实例需要你本机已安装了支持 SMTP 的服务，如：sendmail。
