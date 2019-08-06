@@ -1,0 +1,1 @@
+        fenzhi_data = fenzhi_data.drop_duplicates()
