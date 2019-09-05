@@ -1,0 +1,6 @@
+#https://python-docx.readthedocs.io/en/latest/
+#https://blog.csdn.net/xtfge0915/article/details/83478639
+
+# 处理段落
+doc.paragraphs[0].clear()
+
