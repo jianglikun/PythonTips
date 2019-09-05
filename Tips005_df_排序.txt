@@ -1,0 +1,24 @@
+#1\自定义顺序
+
+        fubiao_data['Type'].fillna('其它', inplace=True)
+        
+        #给一个排序的type
+        fubiao_data['Type'] = fubiao_data['Type'].astype('category')
+        
+        #给一个顺序
+        aim_list = ['其它','螺旋体','立克次氏体','衣原体','支原体','寄生虫','真菌','分支杆菌','细菌','病毒']
+        a = fubiao_data['Type'].tolist()
+        a.sort()
+        a = set(a)
+        
+        order_list = [ i for i in aim_list if i in a]
+        # print(order_list)
+        # 【‘真菌’，‘细菌’】
+        fubiao_data['Type'].cat.reorder_categories(order_list, inplace=True)
+        fubiao_data.sort_values(['Type','Genus_Reads'], inplace=True,ascending=False)
+
+#2\按照一列或多列排序 sort_values
+fubiao_data.sort_values(['Type','Genus_Reads'], inplace=True,ascending=False)
+# 其中Type一列是【‘真菌’，‘细菌’】，ascending=False，就倒叙了，先细菌后真菌
+
+# 其中Genus_Reads一列是数字，ascending=False，就倒叙了，由大到小排序
