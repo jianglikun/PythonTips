@@ -1,0 +1,3 @@
+type(a).__name__ == 'dict'   :可判断a的类型是否类型为dict
+
+if type(value).__name__ == 'Series':
