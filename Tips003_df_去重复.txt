@@ -1,1 +1,3 @@
         fenzhi_data = fenzhi_data.drop_duplicates()
+        
+        # Series 类型也可以去重复，使用方法一样
